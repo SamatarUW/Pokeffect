@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title>Pokemon Super Effective</title>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">		
+		<link rel="stylesheet" type="text/css" href="pokeffectstyle.css"/>
+		<script type="text/javascript" src="poke.js"></script>
+	
+	</head>
+
+	<body>
+
+		<div id="topbar">
+
+			<img id="rotom" src="Images/rotomdex.png">
+			<img id="title" src="Images/title.png">
+			<img id="pika" src="Images/pikachu.png">
+			<img id="ball" src="Images/pokeball.png">
+
+		</div>
+
+		
+
+		<div id="midbar">	
+
+			<div id="searchbox">
+
+				<img id="searchimg" src="Images/search.png">
+				<input id="searchbar" type="text" placeholder="Pokemon Search...">
+
+			</div>
+
+			<div id="pokemonContainer">
+				<div id="pokebox">
+					<div class="slider" id="navbar">
+			
+						<!--<img id="pokeballnav" src="Images/pokeballnav.png">-->
+						
+						<div class="slider" id="nav">
+
+							<div id="leftbox"></div>
+								
+							<div>
+
+								<div class="navbar-sections navwords" id="statsbutton">Base Stats</div>
+								<div class="navbar-sections navwords" id="effectbutton">Weak/Resist</div>
+								<div class="navbar-sections navwords" id="abilitybutton">Abilities</div>
+
+							</div>
+
+							<div id="rightbox"></div>
+
+						</div>
+
+					</div>
+					
+					<div id="tp1" class="types"></div>
+					<div id="tp2" class="types"></div>
+
+				</div>
+
+				<table class="tabledata" id="effect">
+					<tr>  
+
+						<th class="leftcol">Weaknesses</th>
+						<th>Resistances</th>
+						<th>Normal</th>
+						<th class="rightcol">Immunities</th>
+
+					</tr>
+
+					<tr>			
+						<td class="leftcol" id="weak"></td>			
+						<td id="res"></td>			
+						<td id="norm"></td>		
+						<td class="rightcol" id="imm"></td>		
+					</tr>
+				</table>
+
+				<table class="tabledata" id="stats">
+					<tr>  
+
+						<th class="leftcol rightcol">Base Stats</th>
+
+					</tr>
+						<td class="leftcol rightcol" id="statlist"></td>	
+				</table>
+
+				<table class="tabledata" id="abilities">
+					<tr>  
+
+						<th class="leftcol rightcol">Abilities</th>
+
+					</tr>
+						<td class="leftcol rightcol" id="ablist"></td>	
+				</table>
+			</div>		
+
+		</div>
+
+
+		<script type="text/javascript">
+
+			var toggle = true;
+			$("#pokeballnav").click(function() {
+				var width = $("#nav").width();
+		        if(toggle) {
+		            $("#navbar").stop().animate({top:200},1000);
+		        } else {
+		            $("#navbar").stop().animate({top:150},1000);
+		        }
+			    toggle = !toggle;
+
+			});
+
+			$("#statsbutton").click(function() {
+
+		        $("#effect").hide();
+		        $("#abilities").hide();
+		        $("#stats").show();
+
+			});
+
+
+			$("#effectbutton").click(function() {
+
+		        $("#stats").hide();
+		        $("#abilities").hide();
+		        $("#effect").show();
+
+			});
+
+			$("#abilitybutton").click(function() {
+
+		        $("#stats").hide();
+		        $("#effect").hide();
+		        $("#abilities").show();
+
+			});
+
+		</script>
+
+
+	</body>
+
+</html>

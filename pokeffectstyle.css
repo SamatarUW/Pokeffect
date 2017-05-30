@@ -1,0 +1,495 @@
+
+		
+	html, body {
+
+	margin: 0;
+	padding: 0;
+	height: 100%;
+
+	}
+
+	#topbar {
+
+		margin: 0 auto;
+		border: 2px solid black;
+		text-align: center;
+		background-color: #FE2525;
+		height: 150px;
+		width: 100%;
+		z-index: 3;
+
+	}
+
+	#pika {
+
+		height: 100px;
+		padding-left: 20px;
+
+
+	}
+
+	#ball {
+
+		position: relative;
+		top: 10px;
+		right: 45px;
+		height: 60px;
+
+	}
+
+	#title {
+
+		margin-top: 10px;
+		padding-right: 10px;
+
+	}
+
+	#rotom {
+
+		margin-top: 10px;
+		padding-right: 10px;
+
+	}
+
+	#midbar {
+
+		position: absolute;
+		top: 150px;
+		bottom: 0;
+		border: 2px solid black;
+		background-color: #4682b4;
+		width: 100%;
+
+	}
+
+	#pokeballnav {
+
+		height: 65px;
+		position: absolute;
+		top: 150px;
+		left: 135px;
+		z-index: 3;
+		-webkit-transition: -webkit-transform .8s ease-in-out;
+  		transition: transform .5s ease-in-out;
+
+	}
+
+	#pokeballnav:hover {
+
+		cursor: pointer;
+		-webkit-transform: rotate(45deg);
+  		transform: rotate(45deg);
+
+	}
+
+	#toptri {
+
+		position: absolute;
+		top: 0px;
+		width: 0;
+		height: 0;
+		border-top: 50px solid #4682b4;
+		border-left: 37px solid transparent;
+		z-index: 3
+
+	}
+
+	#navbar {
+
+		position: absolute;
+		top: 0;
+		height: 30px;
+		width: 400px;
+		float: left;
+		background-image: url("Images/navbackground.png");
+		position: absolute;
+		z-index: 2;
+	}
+
+	#nav {
+
+		position: absolute;
+		top: 0;
+		float: left;
+		height: 150px;
+		width: 400px;
+
+	}
+
+	.navbar-sections {
+
+		float: left;
+		border-right: 1px #CCCCCC solid;
+		height: 100%;
+
+	}
+
+	.navbar-sections:hover {
+
+		z-index: 5;
+		background-color: #FE2525;
+
+	}
+
+	.navwords {
+
+		position: relative;
+		bottom: 0px;
+		font-weight: bold;
+		color: white;
+		font-size: 100%;
+		padding: 7px 30px 3px 28px;
+		height: 20px;
+
+	}
+
+	.navwords:hover {
+
+		cursor: pointer;
+		color: #F9F91E;
+
+	}
+
+	#bottri {
+
+		position: absolute;
+		bottom: 0;
+		width: 0;
+		height: 0;
+		border-bottom: 50px solid #4682b4;
+		border-left: 37px solid transparent;
+		z-index: 3
+
+	}
+
+	#topbox {
+
+		position: absolute;
+		background-image: url("Images/navbackground.png");
+		width: 30px;
+		height: 200px;
+
+	}
+
+	#botbox {
+
+		position: absolute;
+		right: 100px;
+		background-image: url("Images/navbackground.png");
+		width: 30px;
+		height: 200px;
+
+	}
+
+	#searchbox {
+
+		text-align: center;
+		position: relative;
+		right: 27px;
+		margin: 30px auto;
+		padding: 0;
+
+	}
+
+	#searchbar {
+
+		border: none;
+		font-size: 110%;
+		padding-left: 65px;
+		border-radius: 5px;
+		width: 340px;
+		height: 50px;
+		color: #65737e;
+		background-color: #2b303b;
+
+	}
+
+	#searchimg {
+
+		position: relative;
+		height: 35px;
+		left: 50px;
+		top: 15px;
+		z-index: 100;
+
+	}
+
+	#searchimg:hover {
+
+		cursor: pointer;
+
+	}
+
+	#toplist {
+
+		border-top: 4px solid white;
+
+	}
+
+	#abilitybutton {
+
+		border-right: none;
+
+	}
+
+	#pokebox {
+
+		position: relative;
+		width: 400px;
+		height: 265px;
+		background-color: #DCDCDC;
+		border: 3px solid #2b303b;
+		border-radius: 5px;
+		border-top-right-radius: 0px;
+		border-bottom-right-radius: 0px;
+		padding-bottom: 55px;
+		z-index: 10;
+
+	}
+
+	#pokemonContainer {
+
+		width: 850px;
+		height: 265px;
+		margin: 0 auto;
+
+	}
+
+
+	.types {
+
+		position: relative;
+		top: 265px;
+		width: 50%;
+		float: left;
+
+	}
+
+
+	#pokepic {
+
+		position: relative;
+		left: 90px;
+
+	}
+
+	.tabledata {
+
+		position: relative; 
+		background-color: #2b303b; 
+		bottom: 326px;
+		height: 326px;
+		width: 400px;
+		left: 405px;
+
+	}
+
+	#stats {
+
+		display: none;
+		padding-top: 6px;
+
+	}
+
+	#abilities {
+
+		display: none;
+		padding-top: 6px;
+
+	}
+
+	.leftcol {
+		border-left-color: #2b303b; 
+	}
+
+	.rightcol {
+		border-right-color: #2b303b; 
+	}
+
+	table, th, td {
+	    border-right: 1px solid #DCDCDC;
+	    border-left: 1px solid #DCDCDC;
+	    border-collapse: collapse;
+	    padding: 5px;
+	    color: white;
+	}
+	td {
+	    height: 100%;
+	    font-size: 90%;
+	    text-align: left;
+	    border-bottom-color: #2b303b; 
+	}
+	th {
+		text-align: center;
+		border-top: none;
+		padding-top: 9px;
+		padding-left: 12px;
+		padding-right: 13px;
+		margin-left: -10px;
+		border-bottom: 1px solid white;
+		border-width: 1px;
+	}
+
+	@media screen and (max-width: 850px) {
+		#pika {
+			position: relative;
+			right: 15px;
+			top: 50px;
+			height: 50%;
+			padding-left: 2px;
+		}
+		#rotom {
+			position: relative;
+			left: 40px;
+			top: 50px;
+			height: 55%;
+			margin-top: 15px;
+			padding-right: 1px;
+		}
+		#ball {
+			top: 60px;
+			height: 32%;
+			right: 50px;
+		}
+		#title {
+			margin-top: 25px;
+			height: 45%;
+			padding-right: 5px;
+			padding-left: 0px;
+		}
+		#pokebox {
+			margin: 0 auto;
+			z-index: 0;
+			border-bottom-left-radius: 0px;
+			border-top-right-radius: 5px;
+		}
+		.tabledata {
+			left: 0;
+			margin: 0 auto;
+			width: 356px;
+			top: 0;
+			height: 295px;
+		}
+		#pokebox {
+			width: 350px;
+		}
+		#pokemonContainer {
+			position: relative;
+			width: 350px;
+			height: 535px;
+			margin: 0 auto;
+		}
+		#searchbar{
+			position: relative;
+			left: 10px;
+			width: 285px;
+		}
+		#searchimg {
+			left: 60px;
+		}
+		#pokepic {
+			left: 55px;
+		}
+		.types{
+			right: 35px;
+		}
+		#midbar{
+			bottom: -320px;
+		}
+		.navwords {
+			padding: 7px 21px 3px 20px;
+		}
+		#navbar {
+			width: 350px;
+		}
+		#nav {
+			width: 350px;
+		}
+	th {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	@media screen and (max-width: 540px) {
+		#pika {
+			position: relative;
+			right: 100px;
+			top: 57px;
+			height: 45%;
+			padding-left: 2px;
+		}
+		#rotom {
+			position: relative;
+			left: 120px;
+			top: 57px;
+			height: 50%;
+			margin-top: 15px;
+			padding-right: 1px;
+		}
+		#ball {
+			top: 68px;
+			height: 30%;
+			right: 133px;
+		}
+		#title {
+			margin-top: 0;
+			margin-bottom: 30px;
+			height: 35%;
+			padding-right: 5px;
+			padding-left: 0px;
+		}
+	}
+
+	@media screen and (max-width: 455px) {
+		#pika {
+			display: none;
+		}
+		#rotom {
+			display: none;
+		}
+		#ball {
+			display: none;
+		}
+		#title {
+			margin-top: 50px;
+			height: 40%;
+		}
+
+	}
+
+	@media screen and (max-width: 410px) {
+		#title {
+			margin-top: 50px;
+		}
+		#searchbar {
+			width: 230px;
+			height: 50px;
+		}
+		#searchimg {
+			height: 25px;
+			left: 50px;
+			top: 10px;
+		}
+		#pokebox {
+			width: 325px;
+		}
+		th {
+			font-size: 85%;
+		}
+		td {
+			font-size: 85%;
+		}
+		.tabledata {
+			width: 331px;
+		}
+		#navbar {
+			width: 325px;
+		}
+		#nav {
+			width: 325px;
+		}
+		.navwords {
+			font-size: 85%;
+			padding: 9px 18px 1px 20px;
+		}
+	}
