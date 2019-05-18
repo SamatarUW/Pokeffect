@@ -3,4 +3,4 @@ Simple to use website designed for Pokemon players to quickly find the weaknesse
 
 Site hosted here: [Pokeffect Website](https://stark-earth-27044.herokuapp.com)
 
-![](pokeffect.png)
+![](pokeffect-app.png)
